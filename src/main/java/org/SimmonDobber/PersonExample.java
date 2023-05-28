@@ -1,5 +1,6 @@
 package org.SimmonDobber;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-@Secured
+@JsonFilter("security")
 public class PersonExample {
 
     private String firstName;
